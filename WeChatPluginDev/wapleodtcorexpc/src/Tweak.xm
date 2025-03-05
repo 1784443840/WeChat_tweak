@@ -277,7 +277,7 @@
 	WCTableViewNormalCellManager *stepCountCell = [%c(WCTableViewNormalCellManager) editorCellForSel:@selector(wcpl_handleStepCount:) target:self title:@"修改微信运动步数                  " tip:@"步数小于10万" focus:NO autoCorrect:NO text:[NSString stringWithFormat:@"%ld", (long)[WCPLRedEnvelopConfig sharedConfig].stepCount]];
 	[sectionMgr addCell:stepCountCell];
 
-	WCTableViewNormalCellManager *settingCell = [%c(WCTableViewNormalCellManager) normalCellForSel:@selector(wcpl_setting) target:self title:@"小微同学" accessoryType:1];
+	WCTableViewNormalCellManager *settingCell = [%c(WCTableViewNormalCellManager) normalCellForSel:@selector(wcpl_setting) target:self title:@"自定义" accessoryType:1];
 	[sectionMgr addCell:settingCell];
 
 	/*
